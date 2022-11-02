@@ -15,6 +15,7 @@ public class Frog : MonoBehaviour
     public Transform headPoint;
     private bool colliding;
     private bool playerDestroyed = false;
+    AudioManager audioManager;
 
     void Start()
     {
@@ -22,6 +23,13 @@ public class Frog : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
         circle = GetComponent<CircleCollider2D>();
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("no audiomanager found");
+
+        }
+        
     }
 
     // Update is called once per frame
@@ -31,6 +39,7 @@ public class Frog : MonoBehaviour
         colliding = Physics2D.Linecast(rightCol.position, leftCol.position);
         if (colliding)
         {
+            audioManager.PlaySound("Move");
             transform.localScale = new Vector2(transform.localScale.x * -1f, transform.localScale.y);
             speed *= -1f;
         }
@@ -49,6 +58,7 @@ public class Frog : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
                 speed = 0;
+                audioManager.PlaySound("Die_frog");
                 anim.SetTrigger("die");
                 box.enabled = false;
                 circle.enabled = false;
@@ -57,6 +67,7 @@ public class Frog : MonoBehaviour
             }
             else
             {
+                audioManager.PlaySound("Hit_frog");
                 playerDestroyed = true;
                 GameController.instance.GameOver();
                 Destroy(collision.gameObject);

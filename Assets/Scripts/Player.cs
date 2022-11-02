@@ -10,12 +10,20 @@ public class Player : MonoBehaviour
     public bool doubleJump;
     private Rigidbody2D rig;
     private Animator anim;
+    AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("no audiomanager found");
+
+        }
+        
     }
 
     // Update is called once per frame
@@ -24,7 +32,7 @@ public class Player : MonoBehaviour
         Move();
         if (anim.GetBool("Move"))
         {
-
+            
         }
         Jump();
     }
@@ -67,11 +75,14 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Spike")
         {
+            audioManager.PlaySound("Impaled");
+            audioManager.PlaySound("Death1");
             GameController.instance.GameOver();
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("Saw"))
         {
+            audioManager.PlaySound("Death2");
             GameController.instance.GameOver();
             Destroy(gameObject);
         }

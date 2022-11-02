@@ -94,3 +94,45 @@ MonoBehaviour:
     randomVolume: 0
     randomPitch: 0
     loop: 0
+  - name: Die_fog
+    clip: {fileID: 8300000, guid: 5c42ae2d33c5b334d926d7dbe3c2e7f6, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+  - name: Hit_fog
+    clip: {fileID: 8300000, guid: 2f884e5ea41e6fc4baa5fd2bac7dce33, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+  - name: Move
+    clip: {fileID: 8300000, guid: 6cb4b51a10aee1645b5f55be3daa7217, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+  - name: Death1
+    clip: {fileID: 8300000, guid: 9161cbf6c6978b249b6a0b258914455a, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+  - name: Death2
+    clip: {fileID: 8300000, guid: 0c843dddca052594aa23735d372edf31, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+  - name: Impaled
+    clip: {fileID: 8300000, guid: 5163b2cbd96162542ac763b033b98243, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0

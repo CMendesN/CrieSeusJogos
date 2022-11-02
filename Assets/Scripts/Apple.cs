@@ -8,9 +8,22 @@ public class Apple : MonoBehaviour
     private CircleCollider2D circle;
     public GameObject collected;
     private int score = 1;
-    // Start is called before the first frame update
-    void Start()
-    {
+    AudioManager audioManager;
+    
+    
+    
+    
+
+        // Start is called before the first frame update
+        void Start()
+        {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("no audiomanager found");
+
+        }
+        
         render = GetComponent<SpriteRenderer>();
         circle = GetComponent<CircleCollider2D>();
         
@@ -22,6 +35,7 @@ public class Apple : MonoBehaviour
         {
             render.enabled = false;
             circle.enabled = false;
+            audioManager.PlaySound("Bonus");
             collected.SetActive(true);
             GameController.instance.total += score;
             GameController.instance.UpdateScoreText();
