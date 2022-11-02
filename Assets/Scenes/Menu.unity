@@ -2087,46 +2087,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a19db71858eaed489678628cfee96fd, type: 3}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[5].name
-      value: ButtonHover
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1dd745e4f2ea1d44f90f79b4d1abf15b, type: 3}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[6].name
-      value: PressButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[0].pitch
-      value: 1.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[6].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[5].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5680639710293687298, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
-      propertyPath: sounds.Array.data[6].volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5680639710293687299, guid: 9a72e09f5a0ba2348ba773a6293e6671, type: 3}
       propertyPath: m_Name
       value: AudioManager

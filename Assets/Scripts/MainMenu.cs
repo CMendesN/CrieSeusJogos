@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         audioManager.PlaySound(pressButtonSound);
+        audioManager.StopSound(sound);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
     public void QuitGame()

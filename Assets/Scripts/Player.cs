@@ -22,6 +22,10 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        if (anim.GetBool("Move"))
+        {
+
+        }
         Jump();
     }
     void Move(){

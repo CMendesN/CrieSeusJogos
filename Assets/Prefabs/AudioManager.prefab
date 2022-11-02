@@ -47,37 +47,50 @@ MonoBehaviour:
   sounds:
   - name: Intro
     clip: {fileID: 8300000, guid: 39478954d3e535c4396f82f81fc73853, type: 3}
-    volume: 0.7
-    pitch: 1
+    volume: 0.77
+    pitch: 1.07
     randomVolume: 0
     randomPitch: 0
+    loop: 0
   - name: Ending
     clip: {fileID: 8300000, guid: 3966dfdf0f4ebf74eaec889e197c53af, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0
+    loop: 0
   - name: Objetivo
     clip: {fileID: 8300000, guid: 1d71624dfd5a5594fa14a51da97a3891, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0
+    loop: 0
   - name: Environment
     clip: {fileID: 8300000, guid: 91725f92f58fcae498c0c9db69680423, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0
+    loop: 0
   - name: Enemy
     clip: {fileID: 8300000, guid: 4ccc8b980c4d1074bb19391f65bf185f, type: 3}
     volume: 0.7
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-  - name: Saw
-    clip: {fileID: 8300000, guid: c1a1c5cf200718544acc87c6a5887084, type: 3}
-    volume: 0.7
+    loop: 0
+  - name: ButtonHover
+    clip: {fileID: 8300000, guid: 1a19db71858eaed489678628cfee96fd, type: 3}
+    volume: 1
     pitch: 1
     randomVolume: 0
     randomPitch: 0
+    loop: 0
+  - name: PressButton
+    clip: {fileID: 8300000, guid: 1dd745e4f2ea1d44f90f79b4d1abf15b, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0

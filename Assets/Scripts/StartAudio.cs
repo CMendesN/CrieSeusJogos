@@ -6,7 +6,7 @@ public class StartAudio : MonoBehaviour
 {
     public AudioManager audioManager;
     //cache
-    public string sound = "Intro";
+    public string sound;
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -14,10 +14,11 @@ public class StartAudio : MonoBehaviour
         {
             Debug.LogError("no audiomanager found");
             
-        }else audioManager.PlaySound(sound);
+        }
+        audioManager.PlaySound("Environment");
 
-        
-        
+
+
     }
 
     // Update is called once per frame

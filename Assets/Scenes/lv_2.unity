@@ -3525,6 +3525,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf58f355702fe04eb8c52942f090cda, type: 3}
+--- !u!1 &1759940018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2576176085245191468, guid: 7bf58f355702fe04eb8c52942f090cda, type: 3}
+  m_PrefabInstance: {fileID: 1759940017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1840809681
 GameObject:
   m_ObjectHideFlags: 0
@@ -11145,12 +11150,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 767707094099371723, guid: a82f4c5b76c218c4e890c5586cca82a9, type: 3}
+      propertyPath: box
+      value: 
+      objectReference: {fileID: 767707094038437200}
+    - target: {fileID: 767707094099371723, guid: a82f4c5b76c218c4e890c5586cca82a9, type: 3}
+      propertyPath: fruits
+      value: 
+      objectReference: {fileID: 1759940018}
     - target: {fileID: 767707094099371724, guid: a82f4c5b76c218c4e890c5586cca82a9, type: 3}
       propertyPath: m_Name
       value: Objetivo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a82f4c5b76c218c4e890c5586cca82a9, type: 3}
+--- !u!61 &767707094038437200 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 767707094099371721, guid: a82f4c5b76c218c4e890c5586cca82a9, type: 3}
+  m_PrefabInstance: {fileID: 767707094038437199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1066436054939044923
 PrefabInstance:
   m_ObjectHideFlags: 0

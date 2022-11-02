@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class NextLv : MonoBehaviour
 {
+    AudioManager audioManager;
 
     public GameObject fruits;
     public BoxCollider2D box;
@@ -19,6 +20,7 @@ public class NextLv : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            audioManager.StopSound("Environment");
             
         }
     }
