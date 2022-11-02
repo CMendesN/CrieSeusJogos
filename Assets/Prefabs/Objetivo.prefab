@@ -145,4 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b127be052b384842b7496890afff4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximo: lv_3
+  sound: Environment
+  fruits: {fileID: 0}
+  box: {fileID: 767707094099371721}

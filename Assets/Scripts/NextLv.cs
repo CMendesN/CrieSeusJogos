@@ -5,9 +5,23 @@ using UnityEngine.SceneManagement;
 public class NextLv : MonoBehaviour
 {
     AudioManager audioManager;
-
+    public string sound;
     public GameObject fruits;
     public BoxCollider2D box;
+
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("no audiomanager found");
+
+        }
+        audioManager.PlaySound(sound);
+
+
+
+    }
     private void Update()
     {
         if (!fruits)
@@ -19,8 +33,8 @@ public class NextLv : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            audioManager.StopSound(sound);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            audioManager.StopSound("Environment");
             
         }
     }
