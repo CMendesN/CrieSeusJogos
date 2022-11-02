@@ -75,15 +75,15 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Spike")
         {
+            GameController.instance.GameOver();
             audioManager.PlaySound("Impaled");
             audioManager.PlaySound("Death1");
-            GameController.instance.GameOver();
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("Saw"))
         {
-            audioManager.PlaySound("Death2");
             GameController.instance.GameOver();
+            audioManager.PlaySound("Death2");
             Destroy(gameObject);
         }
     }

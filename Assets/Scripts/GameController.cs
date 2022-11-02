@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
     {
         gameover.SetActive(true);
     }
-    public void ResetLv(string lv)
+    public void ResetLv()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         
