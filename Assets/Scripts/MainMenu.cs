@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
     string hoverOverSound = "ButtonHover";
     [SerializeField]
     string pressButtonSound = "PressButton";
+    [SerializeField]
+    string sound = "Intro";
     AudioManager audioManager;
 
     // Start is called before the first frame update
@@ -19,6 +21,7 @@ public class MainMenu : MonoBehaviour
         {
             Debug.LogError("AudioManager not found");
         }
+        audioManager.PlaySound(sound);
     }
     public void PlayGame()
     {

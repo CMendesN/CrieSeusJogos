@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class NextLv : MonoBehaviour
 {
-    public string proximo;
+
     public GameObject fruits;
     public BoxCollider2D box;
     private void Update()
@@ -21,10 +21,5 @@ public class NextLv : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             
         }
-    }
-
-    public void Nextlv(string lv)
-    {
-        SceneManager.LoadScene(lv);
     }
 }

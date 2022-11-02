@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartAudio : MonoBehaviour
 {
-    private AudioManager audioManager;
+    public AudioManager audioManager;
     //cache
     public string sound = "Intro";
     void Start()
