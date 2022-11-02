@@ -15,7 +15,7 @@ public class StartAudio : MonoBehaviour
             Debug.LogError("no audiomanager found");
             
         }
-        audioManager.PlaySound("Environment");
+        audioManager.PlaySound(sound);
 
 
 
